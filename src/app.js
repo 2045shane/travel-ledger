@@ -470,6 +470,7 @@ function showBanner(banner) {
   node.className = `banner ${banner.type === 'error' ? 'bad' : 'good'}`;
   node.setAttribute('role', banner.type === 'error' ? 'alert' : 'status');
   node.textContent = banner.text;
+  node.scrollIntoView({ block: 'nearest' });
 }
 
 function updateExpensePreview(form, trip) {
@@ -649,6 +650,11 @@ function onSubmit(event) {
 }
 
 function onField(event) {
+  if (ui.banner?.type === 'ok' && event.target?.id !== 'import-file') {
+    ui.banner = null;
+    root.querySelector('.banner')?.remove();
+  }
+
   if (event.target?.id === 'import-file') {
     const file = event.target.files?.[0];
     event.target.value = '';

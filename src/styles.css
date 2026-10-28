@@ -408,9 +408,6 @@ form .button { width: 100%; }
 .center { text-align: center; }
 
 .banner {
-  position: sticky;
-  top: 0;
-  z-index: 5;
   padding: 12px 16px;
   text-align: center;
 }

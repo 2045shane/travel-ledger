@@ -1,0 +1,86 @@
+{
+  "app": "travel-ledger",
+  "version": 1,
+  "trips": [
+    {
+      "id": "dd7a55bf-0799-45de-8745-1e09f2a9b70f",
+      "title": "杭州周末",
+      "createdAt": "2026-10-28T09:21:04.215Z",
+      "updatedAt": "2026-10-28T09:21:05.046Z",
+      "members": [
+        {
+          "id": "857b4ca9-2bac-4f14-a6cf-af1fea3e49c1",
+          "nickname": "我",
+          "createdAt": "2026-10-28T09:21:04.279Z"
+        },
+        {
+          "id": "42a05c4e-37bc-4730-b3d9-21647a195db5",
+          "nickname": "王",
+          "createdAt": "2026-10-28T09:21:04.314Z"
+        },
+        {
+          "id": "40d2474c-2f90-4de4-8c65-c20b6ed5522d",
+          "nickname": "李",
+          "createdAt": "2026-10-28T09:21:04.346Z"
+        }
+      ],
+      "entries": [
+        {
+          "id": "e4109596-0eab-43ff-b1ff-3f358e900722",
+          "kind": "expense",
+          "amountCents": 34000,
+          "note": "午饭",
+          "payerMemberId": "857b4ca9-2bac-4f14-a6cf-af1fea3e49c1",
+          "participantMemberIds": [
+            "857b4ca9-2bac-4f14-a6cf-af1fea3e49c1",
+            "42a05c4e-37bc-4730-b3d9-21647a195db5"
+          ],
+          "createdAt": "2026-10-28T09:21:04.547Z",
+          "updatedAt": "2026-10-28T09:21:04.547Z"
+        },
+        {
+          "id": "d90c60e7-2e31-428c-b08f-b385edbf1e6f",
+          "kind": "prepaid",
+          "amountCents": 10000,
+          "note": "出发前",
+          "prepaidMemberId": "42a05c4e-37bc-4730-b3d9-21647a195db5",
+          "receiverMemberId": "857b4ca9-2bac-4f14-a6cf-af1fea3e49c1",
+          "createdAt": "2026-10-28T09:21:05.046Z",
+          "updatedAt": "2026-10-28T09:21:05.046Z"
+        }
+      ]
+    },
+    {
+      "id": "3c3fed49-24e9-4af0-a56a-3c44eec0798d",
+      "title": "京都五日",
+      "createdAt": "2026-10-28T09:21:05.350Z",
+      "updatedAt": "2026-10-28T09:21:05.530Z",
+      "members": [
+        {
+          "id": "0b7a659e-03c7-4234-88c2-970bd131988f",
+          "nickname": "我",
+          "createdAt": "2026-10-28T09:21:05.412Z"
+        },
+        {
+          "id": "b7a51786-b97a-4e36-b2f5-2cc01ac705ae",
+          "nickname": "李",
+          "createdAt": "2026-10-28T09:21:05.445Z"
+        }
+      ],
+      "entries": [
+        {
+          "id": "06239663-5d38-464a-a056-9cfcf3fda4d3",
+          "kind": "expense",
+          "amountCents": 9000,
+          "note": "车票",
+          "payerMemberId": "b7a51786-b97a-4e36-b2f5-2cc01ac705ae",
+          "participantMemberIds": [
+            "b7a51786-b97a-4e36-b2f5-2cc01ac705ae"
+          ],
+          "createdAt": "2026-10-28T09:21:05.530Z",
+          "updatedAt": "2026-10-28T09:21:05.530Z"
+        }
+      ]
+    }
+  ]
+}
